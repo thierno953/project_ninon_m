@@ -1,0 +1,82 @@
+.home {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120px;
+}
+
+.home_pin {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 10px;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+  align-self: center;
+  border-radius: 5px;
+}
+
+.pinCard {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.pinCard p {
+  font-size: 16px;
+}
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6vmax;
+  padding-bottom: 50px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0px 10px;
+}
+
+.page-item {
+  background-color: rgb(6, 18, 55);
+  list-style: none;
+  border: 1px solid rgb(6, 18, 55);
+  padding: 0.5vmax 1.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.page-link {
+  text-decoration: none;
+  font: 500 0.7vmax "Roboto";
+  color: #ff4820;
+  transition: all 0.3s;
+  font-size: 17px;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .home_pin {
+    grid-template-columns: 1fr;
+  }
+  .pinCard p {
+    font-size: 14px;
+  }
+}

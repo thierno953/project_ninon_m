@@ -1,0 +1,57 @@
+.pinDetails {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pin_flex {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 50px;
+  margin: 0px 10px;
+  margin-top: 100px;
+}
+.CarouselImage {
+  max-width: 100%;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  justify-self: center;
+  border-radius: 7px;
+
+}
+.pin_info {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  flex-direction: column;
+}
+span {
+  font-weight: 500;
+}
+.hr {
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin-top: 10px;
+}
+.pin_info_2 {
+  margin-top: 20px;
+}
+.pin_info_1 h2, .pin_info_2 h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.pin_info_1 h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.pin_info_1 p, .pin_info_2 p {
+  font-size: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .pin_flex {
+    grid-template-columns: 1fr;
+  }
+}
