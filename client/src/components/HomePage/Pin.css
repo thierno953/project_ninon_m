@@ -1,17 +1,17 @@
 .home {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 120px;
+  padding-top: 100px;
 }
 
 .home_pin {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  gap: 5px;
+  gap: 10px;
   align-items: center;
   justify-content: center;
   margin: 0px 10px;
@@ -20,7 +20,6 @@ img {
   max-width: 100%;
   object-fit: cover;
   align-self: center;
-  border-radius: 5px;
 }
 
 .pinCard {
@@ -32,13 +31,13 @@ img {
 }
 .pinCard p {
   font-size: 16px;
+  color: #000000;
 }
 .paginationBox {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 6vmax;
-  padding-bottom: 50px;
+  margin: 2vmax;
 }
 
 .pagination {
@@ -49,10 +48,10 @@ img {
 }
 
 .page-item {
-  background-color: rgb(6, 18, 55);
+  background-color: rgba(0, 0, 0, 0.85);
   list-style: none;
-  border: 1px solid rgb(6, 18, 55);
-  padding: 0.5vmax 1.5vmax;
+
+  padding: 0.3vmax 1.3vmax;
   transition: all 0.3s;
   cursor: pointer;
 }

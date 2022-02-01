@@ -1,8 +1,7 @@
 .footer {
-  background: #0a1930;
+  background-color: rgba(0, 0, 0, 0.85);
   color: #fff;
-  padding: 2rem 0;
-  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+
 }
 .footer_all {
   max-width: 1300px;
@@ -11,7 +10,7 @@
 
 .footer .container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
   padding: 1rem;
   margin: 0px 10px;
@@ -73,7 +72,5 @@ p {
     font-size: 0.6rem;
   }
 
-  .footer .col-1 {
-    display: none;
-  }
+
 }

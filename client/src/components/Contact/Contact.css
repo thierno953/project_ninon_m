@@ -1,25 +1,46 @@
-label {
-    color: #000;
-}
-
-form {
+.form {
+    max-width: 1300px;
+    margin: auto;
+  }
+  .form_grid {
+   max-width: 100%;
+   margin: 0px 10px;
+   border-radius: 10px;
+  }
+  .form_grid h3 {
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     margin: auto;
     max-width: 600px;
-}
-
-form label {
-    margin-bottom: .5rem;
-}
-
-form input, textarea {
+    padding-bottom: 30px;
+  }
+  form p {
+    color: #000;
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: 500; 
+    padding-bottom: 15px;
+  }
+  
+  form label {
+    margin-bottom: 0.5rem;
+    color: #000;
+  }
+  
+  form input,
+  textarea {
     margin-bottom: 1rem;
     padding: 10px 18px;
     font-size: 1.2rem;
-    font-family: 'Outfit', sans-serif;
-    background: rgba(255,255,255,.1);
-    border-color: rgba(255,255,255,.1);
-   
-}
+    font-family: "Outfit", sans-serif;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #000;
+    border: 1px solid #000000;
+  }

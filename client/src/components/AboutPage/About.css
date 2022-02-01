@@ -1,0 +1,27 @@
+.about {
+    max-width: 1300px;
+    margin: auto;
+}
+.about_flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    margin: 0px 10px;
+}
+.about_info {
+    padding-top: 40px;
+}
+.about_flex img {
+    max-width: 100%;
+}
+.about_info_2 p {
+    font-size: 16px;
+    color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+    .about_flex {
+       grid-template-columns: 1fr;
+    }
+}

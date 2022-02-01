@@ -62,22 +62,24 @@ const pinSchema = mongoose.Schema({
   },
   date_of_entry: {
     type: String,
-    required: [true, "Please Enter your Term"],
+    required: [true, "Please Enter your Date of Enter"],
   },
   release_date: {
     type: String,
-    required: [true, "Please Enter your Term"],
+    required: [true, "Please Enter your Release Date"],
   },
   number_occupants: {
     type: String,
-    required: [true, "Please Enter your Number of occupants"],
+    required: [true, "Please Enter your Number of Occupants"],
   },
 
-  createdAt: {
-    type: Date,
-    default: Date.now,
-  },
-});
+  user: {
+    type: mongoose.Schema.ObjectId, 
+    ref: "User",
+    required: true,
+  }
+},
+{ timestamps: true });
 
 module.exports = mongoose.model("Pin", pinSchema);
  

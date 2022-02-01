@@ -1,11 +1,10 @@
 .headers_container {
-  background: #0a1846;
-  color: #ffffff;
   width: 100%;
   height: 70vh;
+  background: #ffffff;
 }
 .headers {
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
 }
 .header_flexs {
@@ -24,15 +23,15 @@
   text-align: left;
 }
 .HeaderInfo h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+  color: #000;
 }
 .HeaderInfo p {
-    color: #ffffff;
-    padding-top: 10px;
+  padding-top: 10px;
 }
 @media screen and (max-width: 720px) {
   .HeaderInfo h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .HeaderInfo p {
     font-size: 15px;

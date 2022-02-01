@@ -29,7 +29,7 @@ const Detail = ({ match }) => {
           <div className="pinDetails">
               <div className="pin_flex">
                <div className="pin_content">
-               {pin.images &&
+               {pin.images && 
               pin.images.map((item, i) => (
                 <img
                   className="CarouselImage"

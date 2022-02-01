@@ -1,13 +1,15 @@
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
-  padding-top: 100px;
+  width: 100%;
+  padding-bottom: 30px;
 
 }
 .maps {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
   margin: 0px 10px;
   align-items: center;
   justify-content: center;
@@ -21,6 +23,9 @@
   width: 100%;
   max-width: 100%;
  
+}
+.mapInfo p {
+  font-size: 16px;
 }
 
 .marker {

@@ -7,24 +7,26 @@ const Footer = () => {
     <div className="footer">
       <div className="footer_all">
         <div className="container">
-          <div className="col col-1">
-            <h1>
-              TM<span className="primary">B</span>
-            </h1>
-          </div>
+        
           <div className="col">
-            <h5>Contact</h5>
+            <h5>Partenaires éventuels</h5>
             <span className="bar"></span>
-            <p>thiernobarry554@gmail.com </p>
-            <p>+32 466 240 103</p>
+            <p>Collectif d’artistes Bruxellois PTTL</p>
+            <p>SOS Migrants</p>
+            <p>Point Culture Bruxelles</p>
+            <p>Les meutes (Festival des Blockx)</p>
+            <p>Pigment asbl</p>
+            <p>Douche Flux</p>
+            <p>Chez Rosi (imprimerie Riso)</p>
+            <p>Medex</p>
           </div>
           <div className="col">
-            <h5>Frontend</h5>
+            <h5>Institutions</h5>
             <span className="bar"> </span>
-            <p>Html</p>
-            <p>Css</p>
-            <p>JavaScript</p>
-            <p>React</p>
+            <p>Globe Aroma</p>
+            <p>Centres culturels des diﬀérentes communes</p>
+            <p>Le chant des rues</p>
+            <p>Inter Environnement Bruxelles</p>
           </div>
           <div className="col">
             <h5>Backend</h5>

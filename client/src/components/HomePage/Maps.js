@@ -14,7 +14,7 @@ const Maps = () => {
 
   const [viewport, setViewport] = useState({
     width: "100%",
-    height: "50vh",
+    height: "35vh",
     latitude: 50.85034,
     longitude: 4.35171,
     zoom: 12,
@@ -37,23 +37,7 @@ const Maps = () => {
   return (
     <div className="container">
       <div className="maps">
-        <div className="map_info">
-          <p>
-            Le Lorem Ipsum est simplement du faux texte employé dans la
-            composition et la mise en page avant impression. Le Lorem Ipsum est
-            le faux texte standard de l'imprimerie depuis les années 1500, quand
-            un imprimeur anonyme assembla ensemble des morceaux de texte pour
-            réaliser un livre spécimen de polices de texte. Il n'a pas fait que
-            survivre cinq siècles, mais s'est aussi adapté à la bureautique
-            informatique, sans que son contenu n'en soit modifié. Il a été
-            popularisé dans les années 1960 grâce à la vente de feuilles
-            Letraset contenant des passages du Lorem Ipsum, et, plus récemment,
-            par son inclusion dans des applications de mise en page de texte,
-            comme Aldus PageMaker.
-          </p>
-        </div>
-
-        <Card container>
+        <Card>
           <ReactMapGL
             {...viewport}
             mapboxApiAccessToken={
@@ -82,6 +66,25 @@ const Maps = () => {
             <NavigationControl style={navControlStyle} />
           </ReactMapGL>
         </Card>
+       <div className="mapInfo">
+       <h2>PRÉSENTATION GÉNÉRAL DU PROJET</h2>
+        <p>
+     
+          Cartographie sans-papiers, est un
+          projet que je développe depuis 4 ans, de manière collaborative, avec
+          des citoyens sans-papiers, habitant Bruxelles depuis plus ou moins
+          longtemps, et ayant vécu ou vivant encore l’expérience de
+          l’occupation. La précarité et l’inexistence de droits pour les
+          personnes sans-papiers, contraints nombre d’entre eux à vivre dans des
+          « squat », lieux vides occupés sans loyer. Et à s’y organiser en
+          communauté, afin de survivre. (trouver de la nourriture, construire un
+          réseau de soutien, s’entendre et rencontrer les voisins, vivre avec le
+          quartier…). Cette organisation, souvent en total autonomie, est pour
+          moi un modèle de civilisation utopique, qui résiste contre des
+          politiques violentes et anti-sociales.
+      
+        </p>
+        </div>
       </div>
     </div>
   );

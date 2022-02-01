@@ -1,22 +1,30 @@
-import React from 'react'
-import './Contact.css'
+import React from "react";
+import "./Contact.css";
 
 const Contact = () => {
-    return (
-        <div className='form'>
-            <form>
-                <label>Your Name</label>
-                <input type='text'></input>
-                <label>Email</label>
-                <input type='email'></input>
-                <label>Subject</label>
-                <input type='text'></input>
-                <label>Details</label>
-                <textarea rows='6' placeholder='Type a short message here' />
-                <button className='btn'>Submit</button>
-            </form>
-        </div>
-    )
-}
+  return (
+    <div className="form">
+      <div className="form_grid">
+        <h3>CONTACT</h3>
+        <form>
+          <input type="text" placeholder="Name" required />
 
-export default Contact
+          <input type="email" placeholder="Email" required />
+
+          <textarea
+            type="text"
+            name="message"
+            id=""
+            rows="6"
+            placeholder="Message"
+          ></textarea>
+          <button type="submit" className="btn">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;

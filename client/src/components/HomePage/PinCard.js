@@ -7,8 +7,8 @@ const PinCard = ({ pin }) => {
     <Link className="pinCard" to={`/pin/${pin._id}`}>
       <img src={pin.images[0].url} alt={pin.title} />
       <p>{pin.title}</p>
-      {/* <p>{pin.description}</p>
-      <p>{pin.property_address}</p> */}
+      <p>{pin.description}</p>
+      <p>{pin.property_address}</p>
     </Link>
     
     </div>

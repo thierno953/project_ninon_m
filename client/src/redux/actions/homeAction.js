@@ -26,7 +26,7 @@ import {
       dispatch({ type: ALL_HOME_REQUEST });
   
       const { data } = await axios.get("api/homes");
-      console.log(data);
+
   
       dispatch({
         type: ALL_HOME_SUCCESS,
