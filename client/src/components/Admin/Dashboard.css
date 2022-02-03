@@ -2,24 +2,21 @@
   max-width: 1300px;
   margin: auto;
   min-height: 70vh;
-  padding-top: 100px;
+  padding-top: 50px;
 
 }
 .dashboard_content {
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
+  gap: 100px;
   margin: 0px 10px;
 }
-
-.dashboardContainer {
-  border-left: 1px solid rgba(0, 0, 0, 0.13);
-  background-color: rgb(255, 255, 255);
-  padding: 3rem 0;
+.sidebar {
+  margin-bottom: 100px;
 }
+
+
 
 .dashboardContainer > h1 {
   color: rgba(0, 0, 0, 0.733);

@@ -9,7 +9,10 @@
   }
   .form_grid h3 {
     text-align: center;
-    padding-top: 100px;
+  }
+  .from_flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   
   form {
@@ -43,4 +46,9 @@
     border-color: rgba(255, 255, 255, 0.1);
     color: #000;
     border: 1px solid #000000;
+  }
+  @media screen and (max-width: 720px) {
+   .from_flex {
+     grid-template-columns: 1fr;
+   }
   }

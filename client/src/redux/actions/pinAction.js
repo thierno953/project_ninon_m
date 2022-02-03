@@ -88,7 +88,7 @@ export const createPin = (pinData) => async (dispatch) => {
       headers: { "Content-Type": "application/json" },
     };
 
-    const { data } = await axios.post(`api/pin/new`, pinData, config);
+    const { data } = await axios.post(`/api/admin/pin`, pinData, config);
     dispatch({ type: NEW_PIN_SUCCESS, payload: data, });
   } catch (error) {
     dispatch({

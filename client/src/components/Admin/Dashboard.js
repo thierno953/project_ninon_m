@@ -7,7 +7,9 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
     <div className="dashboard_content">
-      <Sidebar />
+     <div className="sidebar">
+     <Sidebar className="sidebar" />
+     </div>
 
       <div className="dashboardContainer">
         <h1>
@@ -18,7 +20,7 @@ const Dashboard = () => {
           <div className="dashboardSummaryBox2">
             <Link to="/admin/products">
               <p>Products</p>
-              <p>5</p>
+              <p>4</p>
             </Link>
       
             <Link to="/admin/users">

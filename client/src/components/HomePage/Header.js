@@ -21,18 +21,18 @@ const Header = () => {
   }, [dispatch, error, alert]);
 
   return (
-    <div className="headers_container">
-      <div className="headers">
+ 
+      <>
         {loading ? (
           <Loader />
         ) : (
-          <div className="header_flexs">
+          <>
             {homes &&
               homes.map((item) => <HeaderInfo key={item._id} item={item} />)}
-          </div>
+          </>
         )}
-      </div>
-    </div>
+      </>
+   
   );
 };
 

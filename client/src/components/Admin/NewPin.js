@@ -91,7 +91,7 @@ const NewPin = ({ history }) => {
     <>
       <div className="dashboard">
         <div className="dashboard_content">
-          <Sidebar />
+          <Sidebar className="sidebar" />
           <div className="newProductContainer">
             <form
               className="createProductForm"
@@ -140,7 +140,7 @@ const NewPin = ({ history }) => {
               <div>
                 <input
                   type="text"
-                  placeholder="Propriété_address"
+                  placeholder="Propriété Adresse"
                   required
                   value={property_address}
                   onChange={(e) => setProperty_address(e.target.value)}
@@ -152,16 +152,70 @@ const NewPin = ({ history }) => {
                   placeholder="Propriétaire"
                   required
                   value={property_owner}
-                  onChange={(e) => property_owner(e.target.value)}
+                  onChange={(e) => setProperty_owner(e.target.value)}
                 />
               </div>
               <div>
                 <input
                   type="text"
-                  placeholder="Propriétaire"
+                  placeholder="Propriétaire de la fonction"
                   required
-                  value={property_owner}
-                  onChange={(e) => property_owner(e.target.value)}
+                  value={function_owner}
+                  onChange={(e) => setFunction_owner(e.target.value)}
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Etat de la propriété"
+                  required
+                  value={condition_of_the_property}
+                  onChange={(e) => setCondition_of_the_property(e.target.value)}
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Occupation"
+                  required
+                  value={occupation}
+                  onChange={(e) => setOccupation(e.target.value)}
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Terme"
+                  required
+                  value={term}
+                  onChange={(e) => setTerm(e.target.value)}
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Date d'entrée"
+                  required
+                  value={date_of_entry}
+                  onChange={(e) => setDate_of_entry(e.target.value)}
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Date de sortie"
+                  required
+                  value={release_date}
+                  onChange={(e) => setRelease_date(e.target.value)}
+                />
+              </div>
+              <div>
+                <input
+                  type="number"
+                  placeholder="Nombre d'occupants"
+                  required
+                  value={number_occupants}
+                  onChange={(e) => setNumber_occupants(e.target.value)}
                 />
               </div>
               <div>
