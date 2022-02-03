@@ -46,7 +46,7 @@ const Footer = () => {
       </Section>
       <LowerFooter className="lower__footer">
         <h2>
-          Copyright &copy; 2021 <span>Food Yummy</span>
+          Copyright &copy; 2022 <span>Thierno</span>
         </h2>
       </LowerFooter>
     </div>
@@ -55,8 +55,9 @@ const Footer = () => {
 
 const Section = styled.footer`
   margin: 0;
-  background: linear-gradient(to right, #fc4958, #e85d04);
-  color: white;
+  background: #ffffff;
+  color: #000000;
+  filter: brightness(95%);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10vw;

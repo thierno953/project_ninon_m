@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Header.css";
+
 import { useAlert } from "react-alert";
 import { useDispatch, useSelector } from "react-redux";
 import HeaderInfo from "./HeaderInfo";

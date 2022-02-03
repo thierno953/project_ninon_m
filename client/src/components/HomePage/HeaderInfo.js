@@ -29,11 +29,11 @@ const Section = styled.section`
   .background {
     height: 100%;
     div {
-      background: #000000;
+      background: #ffffff;
       object-fit: cover;
       width: 100%;
       height: 100%;
-      filter: brightness(60%);
+      filter: brightness(95%);
     }
   }
   .content {
@@ -77,7 +77,7 @@ const Section = styled.section`
         letter-spacing: 0.5rem;
       }
       em {
-        color: white;
+        color: #000000;
         width: 60%;
         text-align: end;
         font-size: 1.1rem;

@@ -16,6 +16,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Dashboard from "./components/Admin/Dashboard";
 import PinList from "./components/Admin/PinList";
 import NewPin from "./components/Admin/NewPin";
+import UpdatePin from "./components/Admin/UpdatePin";
 
 function App() {
   useEffect(() => {
@@ -31,7 +32,7 @@ function App() {
       <Element className="Pin">
         <Route exact path="/" component={Pin} />
       </Element>
-    
+      <Route exact path="/pin/:id" component={Detail} />
       <Element className="Maps">
         <Route exact path="/" component={Maps} />
       </Element>
@@ -40,8 +41,9 @@ function App() {
       <Route exact path="/register" component={Register} />
       <ProtectedRoute exact path="/admin/dashboard" isAdmin={true} component={Dashboard} />
       <ProtectedRoute exact path="/admin/pins" isAdmin={true} component={PinList} />
-      <ProtectedRoute exact path="/admin/pin/new" isAdmin={true} component={NewPin} />
-      <Route exact path="/pin/:id" component={Detail} />
+      <ProtectedRoute exact path="/admin/pin" isAdmin={true} component={NewPin} />
+      <ProtectedRoute exact path="/admin/pin/:id" isAdmin={true} component={UpdatePin} />
+  
     
 
 
