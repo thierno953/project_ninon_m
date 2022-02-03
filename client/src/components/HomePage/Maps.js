@@ -83,14 +83,12 @@ const Section = styled.section`
     height: 100%;
     max-width: 100%;
     overflow: hidden;
-    border-radius: 1rem;
-    img {
+    
+    .map {
       object-fit: cover;
       width: 100%;
       height: 100%;
-      filter: brightness(60%);
-      border-radius: 1rem;
-      transition: 0.8s ease-in-out;
+      filter: brightness(90%);
     }
   }
   .content {
@@ -110,20 +108,7 @@ const Section = styled.section`
     h2 {
       width: 60%;
     }
-    button {
-      border: none;
-      padding: 1rem 4rem;
-      font-size: 1.4rem;
-      color: white;
-      border-radius: 4rem;
-      transition: 0.5s ease-in-out;
-      cursor: pointer;
-      background: linear-gradient(to right, #fc4958, #e85d04);
-      text-transform: uppercase;
-      &:hover {
-        background: linear-gradient(to right, #e85d04, #fc4958);
-      }
-    }
+
   }
   @media screen and (min-width: 260px) and (max-width: 1080px) {
     /* display: none; */

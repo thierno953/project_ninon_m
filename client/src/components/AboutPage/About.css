@@ -16,12 +16,16 @@
     max-width: 100%;
 }
 .about_info_2 p {
-    font-size: 16px;
+    font-size: 20px;
     color: #000000;
+    padding-top: 20px;
 }
 
 @media screen and (max-width: 600px) {
     .about_flex {
        grid-template-columns: 1fr;
+    }
+    .about_info_2 p {
+        font-size: 14px;
     }
 }

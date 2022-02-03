@@ -17,6 +17,9 @@ import Dashboard from "./components/Admin/Dashboard";
 import PinList from "./components/Admin/PinList";
 import NewPin from "./components/Admin/NewPin";
 import UpdatePin from "./components/Admin/UpdatePin";
+import Contact from "./components/Contact/Contact";
+import About from "./components/AboutPage/About";
+import AboutDetail from "./components/AboutPage/DetailAbout";
 
 function App() {
   useEffect(() => {
@@ -29,12 +32,21 @@ function App() {
       <Element className="Header">
       <Route exact path="/" component={Header} />
       </Element>
+      <Element className="About">
+        <Route exact path="/" component={About} />
+      </Element>
+      <Element className="About">
+        <Route exact path="/about/:id" component={AboutDetail} />
+      </Element>
       <Element className="Pin">
         <Route exact path="/" component={Pin} />
       </Element>
       <Route exact path="/pin/:id" component={Detail} />
       <Element className="Maps">
         <Route exact path="/" component={Maps} />
+      </Element>
+      <Element className="Contact">
+        <Route exact path="/" component={Contact} />
       </Element>
 
       <Route exact path="/login" component={Login} />

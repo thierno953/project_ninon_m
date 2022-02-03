@@ -27,7 +27,7 @@ export default function Navbar() {
     <>
       <Nav>
         <div className="brand">
-          <h2>Hello</h2>
+          <h2>THIERNO</h2>
           <div className="toggle">
             {navbarState ? (
               <VscChromeClose onClick={() => setNavbarState(false)} />

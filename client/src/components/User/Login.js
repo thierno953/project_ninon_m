@@ -6,7 +6,7 @@ import { clearErrors, login } from "../../redux/actions/userAction";
 import Loader from "../HomePage/Loader";
 import { Link } from "react-router-dom";
 
-const Login = ({ history, location }) => {
+const Login = ({ history }) => {
   const alert = useAlert();
   const dispatch = useDispatch();
   const { error, loading, isAuthenticated } = useSelector(

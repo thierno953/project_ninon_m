@@ -13,7 +13,12 @@
 .content_flexis img {
   max-width: 100%;
   width: 100%;
-  height: 30vh;
+  height: 50vh;
+  object-fit: cover;
+  align-self: center;
+}
+.content_flexis p {
+  font-size: 20px;
 }
 @media screen and (max-width: 600px) {
     .content_flexis h2 {

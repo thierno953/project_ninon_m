@@ -5,7 +5,7 @@ import { useAlert } from "react-alert";
 import { clearErrors, getAboutDetail } from "../../redux/actions/aboutAction";
 import Loader from "../HomePage/Loader";
 
-const DetailAbout = ({ match }) => {
+const AboutDetail = ({ match }) => {
   const dispatch = useDispatch();
   const alert = useAlert();
   const { about, loading, error } = useSelector((state) => state.aboutDetail);
@@ -42,4 +42,4 @@ const DetailAbout = ({ match }) => {
   );
 };
 
-export default DetailAbout;
+export default AboutDetail;

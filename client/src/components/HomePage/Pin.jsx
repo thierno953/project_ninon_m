@@ -36,10 +36,7 @@ const Pin = () => {
         <>
 
           <Section id="blogs">
-            <div className="title">
-              <h2>News & Feeds</h2>
-              <h5>Where you can earn crypto</h5>
-            </div>
+         
             <div className="blogs">
               {pins &&
                 pins.map((pin) => {
@@ -108,10 +105,12 @@ const Section = styled.section`
     margin: auto;
 
     gap: 1rem;
+
     .blog {
       display: flex;
       align-items: center;
       gap: 1rem;
+      margin-top: 50px;
       flex-direction: column;
       background-color: rgba(0, 0, 0, 0.3);
       border-bottom: 0.5rem transparent solid;

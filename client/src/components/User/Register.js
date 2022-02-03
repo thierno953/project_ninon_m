@@ -5,7 +5,7 @@ import { useAlert } from "react-alert";
 import { clearErrors, register } from '../../redux/actions/userAction';
 import Loader from '../HomePage/Loader';
 
-const Register = ({ history, location }) => {
+const Register = ({ history }) => {
     const dispatch = useDispatch();
     const alert = useAlert();
   
