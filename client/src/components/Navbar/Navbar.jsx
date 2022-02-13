@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './Navbar.css';
+import "./Navbar.css";
 import styled from "styled-components";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
@@ -13,7 +13,7 @@ export default function Navbar() {
   const [navbarState, setNavbarState] = useState(false);
   const html = document.querySelector("html");
   html.addEventListener("click", () => setNavbarState(false));
-  
+
   const { user, loading } = useSelector((state) => state.user);
   const dispatch = useDispatch();
   const alert = useAlert();
@@ -72,21 +72,13 @@ export default function Navbar() {
                   </figure>
                   <div className="dropdown-content">
                     {user && user.role !== "admin" ? (
-                      <div>
-                        <Link to="/orders" className="link">
-                        Orders
-                        </Link>
-                      </div>
+                      <div></div>
                     ) : (
-                      <Link
-                        to="/admin/dashboard"
-                        className="link"
-                      
-                      >
+                      <Link to="/admin/dashboard" className="link">
                         Admin
                       </Link>
                     )}
-                 
+
                     <button>
                       <Link to="/" className="logout" onClick={logoutHandler}>
                         Logout
@@ -99,9 +91,7 @@ export default function Navbar() {
                   <div className="btn-group">
                     <button className="btns">
                       {" "}
-                      <Link to="/login">
-                        Sign In
-                      </Link>
+                      <Link to="/login">Sign In</Link>
                     </button>
                   </div>
                 )
@@ -113,38 +103,38 @@ export default function Navbar() {
       <ResponsiveNav state={navbarState} className={navbarState ? "show" : ""}>
         <ul>
           <li>
-            <a
-              href="#home"
+            <Link
+              to="/"
               className="active"
               onClick={() => setNavbarState(false)}
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#services" onClick={() => setNavbarState(false)}>
+            <Link to="#services" onClick={() => setNavbarState(false)}>
               Our Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#portfolio" onClick={() => setNavbarState(false)}>
+            <Link to="#portfolio" onClick={() => setNavbarState(false)}>
               Portfolio
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#testimonials" onClick={() => setNavbarState(false)}>
+            <Link to="/" onClick={() => setNavbarState(false)}>
               Testimonials
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#products" onClick={() => setNavbarState(false)}>
+            <Link to="/" onClick={() => setNavbarState(false)}>
               Products
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#newsletter" onClick={() => setNavbarState(false)}>
+            <Link to="/" onClick={() => setNavbarState(false)}>
               Newsletter
-            </a>
+            </Link>
           </li>
           <li>
             <Link to="/login">
@@ -156,21 +146,13 @@ export default function Navbar() {
                   </figure>
                   <div className="dropdown-content">
                     {user && user.role !== "admin" ? (
-                      <div>
-                        <Link to="/orders" className="link">
-                        Orders
-                        </Link>
-                      </div>
+                      <div></div>
                     ) : (
-                      <Link
-                        to="/admin/dashboard"
-                        className="link"
-                      
-                      >
+                      <Link to="/admin/dashboard" className="link">
                         Admin
                       </Link>
                     )}
-                
+
                     <button>
                       <Link to="/" className="logout" onClick={logoutHandler}>
                         Logout
@@ -183,9 +165,7 @@ export default function Navbar() {
                   <div className="btn-group">
                     <button className="btns">
                       {" "}
-                      <Link to="/login">
-                        Sign In
-                      </Link>
+                      <Link to="/login">Sign In</Link>
                     </button>
                   </div>
                 )
@@ -202,7 +182,7 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 4vw;
+  padding: 20px 12vw;
   .brand {
     img {
       margin-top: 1rem;
@@ -234,6 +214,7 @@ const Nav = styled.nav`
     }
   }
   @media screen and (min-width: 100px) and (max-width: 1080px) {
+    padding: 20px 4vw;
     .brand {
       display: flex;
       justify-content: space-between;

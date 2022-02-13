@@ -53,7 +53,8 @@ const Register = ({ history }) => {
       <>
         <div className="form">
           <div className="form_grid">
-            <form onSubmit={registerSubmit}>
+            <form onSubmit={registerSubmit} className="form_register">
+              <h2>Register</h2>
               <input
                 type="text"
                 placeholder="Name"

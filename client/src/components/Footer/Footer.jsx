@@ -1,47 +1,44 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../../assets/logo.png";
-import { AiFillInstagram } from "react-icons/ai";
-import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <div className="footer">
       <Section>
         <div className="brand container">
-          <img src={logo} alt="" />
+        <h3>Partenaires à la réalisation</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis,
-            repudiandae.
+            Partenaires pouvant aider à la réalisation du projet (il est
+            important pour moi que les citoyens sans-papiers ayant les
+            compétences et souhaitant s’impliquer, puissent le faire, tout en
+            essayant de leur permettre de recevoir une rémunération pour leur
+            travail). De plus, étant actifs dans de nombreux lieux militants,
+            ils seront heureux de proposer l’exposition du travail dans ces
+            espaces.
           </p>
-          <ul>
-            <li>
-              <AiFillInstagram />
-            </li>
-            <li>
-              <FaFacebookF />
-            </li>
-           
-          </ul>
+      
         </div>
         <div className="about container">
           <div className="title">
-            <h3>About Us</h3>
+            <h3>Partenaires éventuels</h3>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
-            eligendi repellat laudantium blanditiis iure nulla, ut aliquam
-            itaque unde nesciunt cum veritatis perferendis vel expedita! Nam
-          </p>
+          <p>Collectif d’artistes Bruxellois PTTL</p>
+          <p>SOS Migrants</p>
+          <p>Point Culture Bruxelles</p>
+          <p>Les meutes (Festival des Blockx)</p>
+          <p>Pigment asbl</p>
+          <p>Douche Flux</p>
+          <p>Chez Rosi (imprimerie Riso)</p>
+          <p>Medex</p>
         </div>
         <div className="contact container">
           <div className="title">
-            <h3>Contact Us</h3>
+            <h3>Partenaires sur ce projet</h3>
           </div>
-          <p>+111111111111&</p>
-          <p>dfdffddffds@gmail.com</p>
-          <p>@dkskdllsdssdf</p>
-          <p>Belgique</p>
+          <p>Globe Aroma</p>
+          <p>Centres culturels des diﬀérentes communes</p>
+          <p>Le chant des rues</p>
+          <p>Inter Environnement Bruxelles</p>
         </div>
       </Section>
       <LowerFooter className="lower__footer">
@@ -61,41 +58,13 @@ const Section = styled.footer`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10vw;
-  padding: 4vw;
+  padding: 25px 12vw;
   p {
     font-size: 1.1rem;
     line-height: 2rem;
     letter-spacing: 0.1rem;
   }
-  ul {
-    display: flex;
-    list-style-type: none;
-    gap: 4vw;
-    margin-top: 2vw;
-    li {
-      padding: 0.8rem;
-      border-radius: 2rem;
-      background-color: white;
-      transition: 0.3s ease-in-out;
-      cursor: pointer;
-      &:hover {
-        background-color: black;
-        svg {
-          transform: scale(1.2);
-        }
-      }
-      svg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fc4958;
-        font-size: 1.6rem;
-        transition: 0.3s ease-in-out;
-        &:hover {
-        }
-      }
-    }
-  }
+
   img {
     filter: brightness(0) invert(1);
     width: 10vw;
@@ -105,10 +74,14 @@ const Section = styled.footer`
     flex-direction: column;
     gap: 0.5rem;
     h3 {
-      font-size: 2rem;
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1rem;
     }
   }
   @media screen and (min-width: 260px) and (max-width: 1080px) {
+    padding: 8vw;
     grid-template-columns: 1fr;
     .container {
       img {

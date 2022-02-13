@@ -34,21 +34,19 @@ const Pin = () => {
         <Loader />
       ) : (
         <>
-
           <Section id="blogs">
-         
             <div className="blogs">
               {pins &&
                 pins.map((pin) => {
                   return (
                     <div className="blog" key={pin._id}>
-                       <Link to={`/pin/${pin._id}`}>
-                      <img src={pin.images[0].url} alt={pin.title} />
-                      <div className="data">
-                        <h6>{pin.title}</h6>
-                        <h4>{pin.property_address}</h4>
-                        <p>{pin.description}</p>
-                      </div>
+                      <Link to={`/pin/${pin._id}`}>
+                        <img src={pin.images[0].url} alt={pin.title} />
+                        <div className="data">
+                          <h6>{pin.title}</h6>
+                          <h4>{pin.property_address}</h4>
+                          <p>{pin.description}</p>
+                        </div>
                       </Link>
                     </div>
                   );
@@ -81,10 +79,6 @@ const Pin = () => {
 };
 
 const Section = styled.section`
-  .container {
-    max-width: 1300px;
-    margin: auto;
-  }
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,9 +95,9 @@ const Section = styled.section`
     grid-template-rows: 1fr;
     align-items: center;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
-
+    margin: 0px 10px;
     gap: 1rem;
 
     .blog {
@@ -132,7 +126,6 @@ const Section = styled.section`
           font-size: 0.9rem;
           font-weight: 100;
         }
-     
       }
     }
   }
@@ -141,7 +134,7 @@ const Section = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2vmax;
+    margin-bottom: 20px;
   }
 
   .pagination {
@@ -152,9 +145,9 @@ const Section = styled.section`
   }
 
   .page-item {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: #918e8e;
+    filter: brightness(95%);
     list-style: none;
-
     padding: 0.3vmax 1.3vmax;
     transition: all 0.3s;
     cursor: pointer;
@@ -175,7 +168,7 @@ const Section = styled.section`
     color: #fff;
   }
 
-  @media screen and (min-width: 280px) and (max-width: 1080px) {
+  @media screen and (min-width: 280px) and (max-width: 600px) {
     margin: 2rem 1rem;
     .title {
       h2 {

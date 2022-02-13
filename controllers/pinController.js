@@ -37,7 +37,7 @@ exports.createPin = catchAsyncErrors(async (req, res) => {
 
 // all pins
 exports.getAllPin = catchAsyncErrors(async (req, res) => {
-  const resultPerPage = 8;
+  const resultPerPage = 4;
   const pinsCount = await Pin.countDocuments();
 
   const apiFeature = new ApiFeatures(Pin.find(), req.query)

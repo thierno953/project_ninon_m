@@ -38,6 +38,7 @@ const Login = ({ history }) => {
         <div className="form">
           <div className="form_grid">
             <form onSubmit={handleSubmit}>
+            <h2>Login</h2>
               <input
                 type="email"
                 placeholder="Email"

@@ -1,0 +1,41 @@
+.form {
+  max-width: 1300px;
+  margin: auto;
+  min-height: 60vh;
+  padding-top: 100px;
+}
+.form_grid {
+  margin: auto;
+  max-width: 600px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+form p {
+  color: #fff;
+  font-weight: 500;
+}
+
+form label {
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+form input,
+textarea {
+  margin-bottom: 1rem;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-family: "Outfit", sans-serif;
+  background: #e6e1e1;
+  color: #fff;
+}
+form .btn {
+  padding: 10px 22px;
+  cursor: pointer;
+}
+form a {
+  padding-top: 15px;
+}

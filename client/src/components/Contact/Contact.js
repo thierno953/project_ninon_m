@@ -3,9 +3,9 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className="form">
-      <div className="form_grid">
-        <div className="from_flex">
+    <div className="form_contact">
+      <div className="form_grid_contact">
+        <div className="from_flex_contact">
           <div className="from_info">
             <h2> Demande d'information</h2>
             <h3>

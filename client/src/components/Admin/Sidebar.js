@@ -39,7 +39,6 @@ const Sidebar = () => {
           <PeopleIcon /> Users
         </p>
       </Link>
- 
     </div>
   );
 };

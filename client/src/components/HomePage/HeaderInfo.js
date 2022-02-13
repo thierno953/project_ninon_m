@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import heroDesign from "../../assets/phone-features.png";
+// import heroDesign from "../../assets/phone-features.png";
 
 const HeaderInfo = ({ item }) => {
   return (
@@ -9,13 +9,13 @@ const HeaderInfo = ({ item }) => {
         <div></div>
       </div>
       <div className="content">
-        <div className="sale">
+     {/*    <div className="sale">
           <img src={heroDesign} alt="" />
-        </div>
+        </div> */}
         <div className="info">
           <h2>{item.title}</h2>
           <em>{item.description}</em>
-          <button>ORDER NOW</button>
+          <button>+32 1234567890</button>
         </div>
       </div>
     </Section>
@@ -23,7 +23,7 @@ const HeaderInfo = ({ item }) => {
 };
 
 const Section = styled.section`
-  height: 90vh;
+  height: 50vh;
   width: 100vw;
   position: relative;
   .background {
@@ -41,32 +41,15 @@ const Section = styled.section`
     top: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 100%;
     width: 100%;
-    .sale {
-      position: relative;
-      left: 10%;
-      img {
-        height: 70vh;
-      }
-      h1 {
-        color: #ffffff;
-        position: absolute;
-        top: 25vh;
-        left: 15vh;
-        font-size: 4.5rem;
-        span {
-          display: block;
-          font-size: 5vw;
-        }
-      }
-    }
+
     .info {
-      position: absolute;
-      top: 40%;
-      right: 10%;
+      
       display: flex;
+      align-item: center;
+      justify-content: center;
       flex-direction: column;
       align-items: flex-end;
       gap: 1rem;
@@ -112,7 +95,7 @@ const Section = styled.section`
           font-size: 2rem;
         }
         em {
-          width: 90%;
+          width: 100%;
         }
       }
     }
